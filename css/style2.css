@@ -86,7 +86,7 @@ a {
 .section-top {
   min-height: 500px;
   opacity: 0.7;
-  background: url(/img/woodarkins.jpg) no-repeat center center/cover;
+  background: url(./img/woodarkins.jpg) no-repeat center center/cover !important;
   z-index: -1;
 }
 
