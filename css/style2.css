@@ -42,6 +42,19 @@ a {
 .secondary-text {
   color: rgb(180, 2, 2);
 }
+
+#header {
+  font-family: "horror";
+  color: var(--primary);
+  letter-spacing: 4px;
+  font-size: 9rem;
+  z-index: 5;
+}
+
+.frame {
+  background: url(/img/frame.png) no-repeat center center/cover;
+  z-index: 5;
+}
 .btn {
   display: inline-block;
   background: var(--primary);
@@ -60,7 +73,7 @@ a {
 
 .btn:hover {
   opacity: 0.8;
-  background: url(/img/hand2.jpg) no-repeat;
+  background: url(/img/hand2.jpg) no-repeat center center/cover;
   color: black;
 }
 
@@ -72,7 +85,8 @@ a {
 /* Section Top */
 .section-top {
   min-height: 500px;
-  background: url(/img/woods2.jpg);
+  opacity: 0.7;
+  background: url(/img/woodarkins.jpg) no-repeat center center/cover;
   z-index: -1;
 }
 
