@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "horror";
+  src: url("../font/youmurdererbb_reg.ttf");
+}
+
+:root {
+  --primary: rgb(122, 2, 2);
+  --secondary: #f8eeee;
+  --third: #323232;
+  --dark-color: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "khula";
+  -webkit-font-smoothing: antialiased;
+  background: black;
+  color: var(--secondary);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--secondary);
+}
+
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.primary-text {
+  color: #f8eeee;
+}
+
+.secondary-text {
+  color: rgb(180, 2, 2);
+}
+.btn {
+  display: inline-block;
+  background: var(--primary);
+  color: var(--secondary);
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem 1.3rem;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  transition: all 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+
+.btn:hover {
+  opacity: 0.8;
+  background: url(/img/hand2.jpg) no-repeat;
+  color: black;
+}
+
+.section {
+  position: relative;
+  padding: 0 20px;
+}
+
+/* Section Top */
+.section-top {
+  min-height: 500px;
+  background: url(/img/woods2.jpg);
+  z-index: -1;
+}
+
+.section-top h1 {
+  font-size: 70px;
+  line-height: 1.3;
+}
+
+.section-top .content {
+  position: absolute;
+  top: 100px;
+  right: 20px;
+  width: 55%;
+}
+
+/* Section Stream */
+.section-stream {
+  min-height: 700px;
+  background: url("https://i.ibb.co/bsX6RV0/bg2.png") no-repeat center
+    center/cover;
+  display: flex;
+}
+
+.section-stream h2 {
+  font-size: 35px;
+}
+
+.section-stream .play {
+  width: 27%;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.section-stream .content {
+  position: absolute;
+  width: 50%;
+  top: 130px;
+  right: 70px;
+}
+
+.section-stream .content > div,
+.section-grid > div {
+  background: rgba(187, 185, 185, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+/* Section Stream */
+.section-stream {
+  min-height: 700px;
+  background: url("https://i.ibb.co/bsX6RV0/bg2.png") no-repeat center
+    center/cover;
+  display: flex;
+  justify-content: right;
+}
+
+.scary {
+  height: 800px;
+  margin-left: 60%;
+  margin-bottom: 50%;
+  width: 200px;
+}
+
+.section-stream h2 {
+  font-size: 35px;
+}
+
+.section-stream .play {
+  width: 27%;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+
+.section-stream .content {
+  position: absolute;
+  width: 50%;
+  top: 130px;
+  right: 70px;
+}
+
+.section-stream .content > div,
+.section-grid > div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Section Grid */
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.section-grid p {
+  color: var(--text-color);
+}
+
+.section-grid .dot {
+  font-size: 40px;
+  padding-left: 2px;
+}
+
+/* footer */
+
+.footer {
+  max-width: 75%;
+  margin: 1rem auto;
+  overflow: auto;
+}
+
+.footer,
+.footer a {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.footer p {
+  margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .section-top .content,
+  .section-stream .play,
+  .section-stream .content {
+    position: static;
+    width: 100%;
+  }
+
+  .section-top {
+    min-height: 200px;
+    padding-top: 20px;
+  }
+
+  .section-top .content {
+    text-align: center;
+  }
+
+  .section-top .content h1 {
+    font-size: 45px;
+  }
+
+  .section-stream {
+    min-height: 400px;
+  }
+
+  .section-stream .play {
+    width: 50%;
+    display: block;
+    margin: 30px auto;
+  }
+
+  .section-grid {
+    display: block;
+    margin-top: 0;
+  }
+
+  .footer ul {
+    display: block;
+  }
+}

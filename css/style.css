@@ -4,7 +4,7 @@
 }
 
 :root {
-  --primary: rgb(173, 8, 8);
+  --primary: rgb(122, 2, 2);
   --secondary: #f8eeee;
   --third: #323232;
   --dark-color: #141414;
@@ -17,7 +17,7 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "khula";
   -webkit-font-smoothing: antialiased;
   background: black;
   color: var(--secondary);
@@ -43,6 +43,38 @@ p {
   margin: 0.5rem 0;
 }
 
+.handBox {
+  margin-top: 60px !important;
+  margin: auto;
+  width: 240px;
+  height: 320px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 5px 5px 5px 2px black;
+  border-radius: 80px;
+}
+
+.handBox::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6);
+  box-shadow: inset 10px 10px 50px 50px black;
+  border-radius: 80px;
+}
+
+.handPic {
+  position: absolute;
+  border-radius: 80px;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 img {
   width: 100%;
 }
@@ -55,8 +87,9 @@ img {
 }
 
 .showcase {
+  padding-top: 80px;
   width: 100%;
-  height: 93vh;
+  height: 73vh;
   position: relative;
   background: url(/img/back.jpg) center center/cover;
 }
@@ -104,6 +137,18 @@ img {
   text-align: center;
   margin-top: 9rem;
   z-index: 2;
+}
+
+#top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign {
+  margin-top: 50px;
+  width: 10%;
 }
 
 .showcase-content h2 {
@@ -308,12 +353,12 @@ img {
   outline: none;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
   border-radius: 2px;
-  transition: all 1s cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: all 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
 
 .btn:hover {
   opacity: 0.8;
-  background: var(--secondary);
+  background: url(/img/hand2.jpg) no-repeat;
   color: black;
 }
 
@@ -329,7 +374,7 @@ img {
 
 .btn-lg {
   font-size: 1rem;
-  padding: 0.8rem 1.3rem;
+  padding: 0.8rem 1rem;
   text-transform: uppercase;
 }
 
