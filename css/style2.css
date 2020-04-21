@@ -77,6 +77,12 @@ a {
   color: black;
 }
 
+#movs {
+  height: 500px;
+  margin-right: 990px;
+  z-index: 2;
+}
+
 .section {
   position: relative;
   padding: 0 20px;
@@ -128,6 +134,10 @@ a {
   right: 70px;
 }
 
+#scaru {
+  z-index: -2;
+}
+
 .section-stream .content > div,
 .section-grid > div {
   background: rgba(187, 185, 185, 0.1);
@@ -174,14 +184,6 @@ p {
   right: 70px;
 }
 
-.section-stream .content > div,
-.section-grid > div {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-}
-
 /* Section Grid */
 .section-grid {
   display: grid;
@@ -199,12 +201,21 @@ p {
   padding-left: 2px;
 }
 
+.section-stream .content > div,
+.section-grid > div {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
 /* footer */
 
 .footer {
   max-width: 75%;
   margin: 1rem auto;
   overflow: auto;
+  margin-top: 10%;
 }
 
 .footer,
@@ -232,6 +243,13 @@ p {
     width: 100%;
   }
 
+  .section-grid > div {
+    background: black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
   .section-top {
     min-height: 200px;
     padding-top: 20px;
@@ -241,8 +259,20 @@ p {
     text-align: center;
   }
 
+  img {
+    width: 100%;
+  }
+
+  #scaru {
+    width: 500px !important;
+  }
+
   .section-top .content h1 {
     font-size: 45px;
+  }
+
+  .section-stream .content {
+    display: none;
   }
 
   .section-stream {
